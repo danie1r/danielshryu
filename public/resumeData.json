@@ -1,0 +1,318 @@
+{
+  "main": {
+    "name": "Daniel SH Ryu",
+    "description": "I develop web/mobile applications ",
+    "image": "profilepic.jpg",
+    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+    "email": "r.seunghyeondaniel@wustl.edu",
+    "phone": "314-760-8331",
+    "github": "https://github.com/danie1r",
+    "project": "https://github.com/nordicgiant2/react-nice-resume",
+    "address": {
+      "street": "1 Brookings Dr.",
+      "city": "University City",
+      "state": "MO",
+      "zip": "63130"
+    },
+    "website": "http://www.timbakerdev.com",
+    "resumedownload": "/images/profilepic.jpg",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/tim-baker-8420009a/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/danie1r",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "projects": [
+      {
+        "title": "Priism Mobile",
+        "url": [
+          {
+            "link": "https://www.github.com/danie1r/Priism-mobile",
+            "type": "github"
+          }
+        ],
+        "years": "January 2023 - May 2023",
+        "description": {
+          "points": [
+            "Created and deployed an iOS/Android mobile app for an anonymous social platform for college students using React Native, and Firestore DB.",
+            "Implemented security features for user and post channel privacy, contributing to a more secure user experience.",
+            "Improved app performance and scalability by reducing the average DB read count by 30% through optimizing query logic and data synchronization."
+          ]
+        },
+        "skills": ["React Native", "JavaScript", "Firebase"]
+      },
+      {
+        "title": "ARCraft",
+        "url": [
+          {
+            "link": "https://www.github.com/danie1r/ARCraft",
+            "type": "github"
+          }
+        ],
+        "years": "December 2022 - March 2023",
+        "description": {
+          "points": [
+            "Engineered ARCraft, an iOS social media app that provides a collection of 20+ AR video effects and AR multiplayer games using the ARKit and RealityKit SDK.",
+            "Optimized app performance by reworking application logic and synchronizing data in our server to reduce CPU utilization, which resulted in a 10% decrease in main thread work time."
+          ]
+        },
+        "skills": ["iOS App", "Swift", "ARKit/RealityKit", "Firebase"]
+      },
+      {
+        "title": "Pepper Inc.",
+        "url": [
+          {
+            "link": "www.peppermotor.com",
+            "type": "landing page"
+          },
+          {
+            "link": "https://github.com/danie1r/studioPepper",
+            "type" : "github"
+          }
+        ],
+        "years": "November 2021 - December 2022",
+        "description": {
+          "points": [
+            "Spearheaded a group of developers and designers in creating an NFT collection business recently launched in October 2022. ",
+            "Deployed smart contract for the NFT marketplace dApp and NFT token on the Polygon network using Pinata, Solidity, Ethereum Virtual Machine API (EVM), OpenZeppelin, and Typescript.",
+            "Created an NFT collection website with React and CSS and deployed the website using AWS EC2 Instance."
+          ]
+        },
+        "skills": [
+          "dApp",
+          "Smart Contract Dev",
+          "TypeScript",
+          "React.js",
+          "AWS EC2"
+        ]
+      },
+      {
+        "title": "Catch Me If You Can",
+        "url": [
+          {
+            "link" : "https://github.com/danie1r/Catch-Me-If-You-Can",
+            "type" : "github"
+          }
+        ],
+        "years": "November 2022 - December 2022",
+        "description": {
+          "points": [
+            "Directed an iOS game application that hosts an interactive multiplayer tag game using Swift, MapKit, and Ruby.",
+            "Constructed the backend service with Realtime Firebase Database, and scaled the application to hold up to over 100+ players."
+          ]
+        },
+        "skills": ["iOS App", "Swift", "MapKit", "Firebase", "Ruby"]
+      }
+    ],
+    "education": [
+      {
+        "school": "Washington University in St. Louis",
+        "degree": "MEng in Computer Science",
+        "graduated": "May 2024",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      },
+      {
+        "school": "Washington University in St. Louis",
+        "degree": "BSc in Computer Science",
+        "graduated": "May 2023",
+        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      }
+    ],
+    "work": [
+      {
+        "company": "Ellipsis Travel",
+        "title": "Software Engineer Intern",
+        "years": "June 2023 - Present",
+        "description": {
+          "points": [
+            "Developed Node.js and TypeScript backend interfaces to transform data from Ticketmaster and Viator APIs and Elasticsearch DB into application-compatible objects.",
+            "Implemented Python script with concurrent programming (multithreading) to improve performance of ingesting location and product data into Elasticsearch DB.",
+            "Designed and executed a CI/CD model for automated data ingestion from Viator API, keeping ElasticSearch DB up to date."
+          ]
+        },
+        "skills": [
+          "TypeScript",
+          "Python",
+          "ElasticSearch",
+          "Node.js",
+          "Concurrent Programming",
+          "API Integration",
+          "Data Ingestion",
+          "CI/CD Model"
+        ]
+      },
+      {
+        "company": "Washington University in St. Louis",
+        "title": "Research Software Engineer",
+        "years": "September 2022 - May 2023",
+        "description": {
+          "points": [
+            "Released an iOS health application for tracking the functional status of 100+ patients with musculoskeletal disorders using Swift, PostgreSQL, and Apple Healthkit API.",
+            "Revamped the EDC application for doctors to enroll subjects in the study using JavaScript and Java, reducing latency by 5 ms."
+          ]
+        },
+        "skills": [
+          "JavaScript",
+          "Java",
+          "Swift",
+          "PostgreSQL",
+          "AWS Lambda",
+          "API Integration"
+        ]
+      },
+      {
+        "company": "Object Computing Inc",
+        "title": "Software Engineer Intern",
+        "years": "June 2022 - August 2022",
+        "description": {
+          "points": [
+            "Launched onboarding application with React and innovated the onboarding experience for new hires and HR managers by streamlining the whole process, reducing the time taken to onboard a new employee by 40%.",
+            "Constructed RESTful web services and DTOs with Java using the Micronaut framework and enhanced the elapsed time by 10% for SQL queries to execute within the PostgreSQL database.",
+            "Streamlined and simplified the process of tracking the progress of signing employment documents by integrating the SignRequest API."
+          ]
+        },
+        "skills": [
+          "React.js",
+          "JavaScript",
+          "Java",
+          "SQL",
+          "PostgreSQL",
+          "Micronaut"
+        ]
+      },
+      {
+        "company": "Onnuri iKorea",
+        "title": "Software Engineer",
+        "years": "June 2019 - August 2022",
+        "description": {
+          "points": [
+            "Introduced a web data mining tool using Python, Selenium WebDriver, and BeautifulSoup library to collect and process data for understanding target consumers’ online behaviors.",
+            "Devised an AI tool using Python to collect data and analyze the number of potential customers from over 300 Instagram accounts based on keyword inputs."
+          ]
+        },
+        "skills": [
+          "Python",
+          "Web-Scraping",
+          "Selenium WebDriver",
+          "Data Ingestion"
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "level": "60%"
+      },
+      {
+        "name": "VueJs",
+        "level": "55%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "50%"
+      },
+      {
+        "name": "CSS",
+        "level": "90%"
+      },
+      {
+        "name": "PHP",
+        "level": "80%"
+      },
+      {
+        "name": "Swift",
+        "level": "50%"
+      },
+      {
+        "name": "JAVA",
+        "level": "80%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Canadian Wanderlust",
+        "category": "My Travel Blog for my post-university travels",
+        "image": "01.jpg",
+        "url": "https://www.canadianwanderlust.com"
+      },
+      {
+        "title": "Fury Fighting Gear",
+        "category": "(offline now) A fighting gear company I started",
+        "image": "02.jpg",
+        "url": "http://www.timbakerdev.com"
+      },
+      {
+        "title": "Original Thai Food",
+        "category": "Website I built for a restaurant I like in Thailand",
+        "image": "03.jpg",
+        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+      },
+      {
+        "title": "Resume Website",
+        "category": "A React based resume website template",
+        "image": "04.jpg",
+        "url": "http://www.timbakerdev.com"
+      },
+      {
+        "title": "Smirkspace",
+        "category": "(MVP Only) A React and Meteor based chat University project.",
+        "image": "05.jpg",
+        "url": "http://www.smirkspace.com"
+      },
+      {
+        "title": "Canadian Wanderlust",
+        "category": "My Travel Blog for my post-university travels",
+        "image": "06.jpg",
+        "url": "https://www.canadianwanderlust.com"
+      },
+      {
+        "title": "Fury Fighting Gear",
+        "category": "(offline now) A fighting gear company I started",
+        "image": "01.jpg",
+        "url": "http://www.timbakerdev.com"
+      },
+      {
+        "title": "Original Thai Food",
+        "category": "Website I built for a restaurant I like in Thailand",
+        "image": "02.jpg",
+        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+      },
+      {
+        "title": "Original Thai Food",
+        "category": "Website I built for a restaurant I like in Thailand",
+        "image": "03.jpg",
+        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+      },
+      {
+        "title": "Resume Website",
+        "category": "A React based resume website template",
+        "image": "04.jpg",
+        "url": "http://www.timbakerdev.com"
+      },
+      {
+        "title": "Smirkspace",
+        "category": "(MVP Only) A React and Meteor based chat University project.",
+        "image": "05.jpg",
+        "url": "http://www.smirkspace.com"
+      },
+      {
+        "title": "Canadian Wanderlust",
+        "category": "My Travel Blog for my post-university travels",
+        "image": "06.jpg",
+        "url": "https://www.canadianwanderlust.com"
+      }
+    ]
+  }
+}
