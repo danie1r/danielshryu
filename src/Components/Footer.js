@@ -54,12 +54,6 @@ class Footer extends Component {
             <div className="twelve columns">
               <ul className="copyright">
                 <li>
-                  Template by{" "}
-                  <a title="Styleshout" href="http://www.styleshout.com/">
-                    Styleshout
-                  </a>
-                </li>
-                <li>
                   Deployed with{" "}
                   <a title="Vercel" href="https://vercel.com/">
                     Vercel

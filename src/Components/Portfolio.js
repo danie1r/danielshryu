@@ -34,13 +34,13 @@ class Portfolio extends Component {
             <h3>{proj.title}</h3>
             <ul style={{ listStyle: "inherit" }}>
               {proj.description.points.map((bullet) => {
-                return <li>{bullet}</li>;
+                return <li style={{lineHeight:"2"}}>{bullet}</li>;
               })}
             </ul>
             <p className="info">
               {proj.url.map((go) => {
                 return (
-                  <a href={go.link} className="link">
+                  <a href={go.link} className="link" style={{color: "#8AFFE8"}}>
                     <ion-icon name="link-outline"></ion-icon>
                     {go.type}
                   </a>
