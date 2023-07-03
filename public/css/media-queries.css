@@ -49,6 +49,10 @@
 
    /* About Section
    ------------------------------------------------------------------- */
+
+   #about {
+      width: 800px;
+   }
    #about .profile-pic {
       width: 114px;
       height: 114px;
@@ -62,6 +66,7 @@
    #resume h1 { font: 16px/24px 'opensans-bold', sans-serif; }
    #resume .main-col { padding-right: 5%; }   
 
+   
    /* Testimonials Section
    ------------------------------------------------------------------- */
    #testimonials .header-col h1:before {
@@ -212,9 +217,22 @@
     /* scrolldown link */
    header .scrolldown { display: none; }
 
+   #skills .container{
+      display: block;
+      border: none !important;
+      align-items: center !important;
+      margin-left: 10%;
+      margin-right: auto;
+   }
 
+   #skills .box {
+      border-right: none !important;
+   }
    /* About Section
    -------------------------------------------------------------------- */
+   #about {
+      width: 500px;
+   }
    #about .profile-pic { display: none; }
    #about .download .button {
       width: 100%;
@@ -234,6 +252,7 @@
    #resume h1 { letter-spacing: 3px; }
    #resume .main-col { padding-right: 30px; }
    #resume h3, #resume .info { text-align: center; }
+
       
    .bars { width: 100%; }
 
@@ -256,7 +275,8 @@
    /* ----------------------------------------------------------------- */
    #portfolio-wrapper .columns { margin-bottom: 40px; }
    .popup-modal {	max-width: 85%; }
-
+   #portfolio .project-list {display: block !important;}
+   #portfolio .project-list .project-list-img {margin:auto; max-width: none !important; max-height: none !important; margin-right: 0px !important;}
 
    /* Testimonials Section
    ----------------------------------------------------------------------- */

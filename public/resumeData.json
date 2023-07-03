@@ -1,131 +1,40 @@
 {
   "main": {
     "name": "Daniel SH Ryu",
-    "description": "I develop web/mobile applications ",
+    "description": "I specialize in ",
     "image": "profilepic.jpg",
-    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "r.seunghyeondaniel@wustl.edu",
-    "phone": "314-760-8331",
     "github": "https://github.com/danie1r",
-    "project": "https://github.com/nordicgiant2/react-nice-resume",
-    "address": {
-      "street": "1 Brookings Dr.",
-      "city": "University City",
-      "state": "MO",
-      "zip": "63130"
-    },
+    "linkedin": "https://www.linkedin.com/in/shryu/",
+    "youtube": "https://www.youtube.com/channel/UCrGk4dAirzsUaSY7LBz7oFA",
     "website": "http://www.timbakerdev.com",
     "resumedownload": "/images/profilepic.jpg",
     "social": [
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/tim-baker-8420009a/",
-        "className": "fa fa-linkedin"
+        "url": "https://www.linkedin.com/in/shryu/",
+        "className": "fa fa-linkedin fa-lg"
       },
       {
         "name": "github",
         "url": "https://github.com/danie1r",
-        "className": "fa fa-github"
+        "className": "fa fa-github fa-lg"
+      },
+      {
+        "name": "youtube",
+        "url": "https://www.youtube.com/channel/UCrGk4dAirzsUaSY7LBz7oFA",
+        "className": "fa fa-youtube fa-lg"
       }
     ]
   },
   "resume": {
-    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
-    "projects": [
-      {
-        "title": "Priism Mobile",
-        "url": [
-          {
-            "link": "https://www.github.com/danie1r/Priism-mobile",
-            "type": "github"
-          }
-        ],
-        "years": "January 2023 - May 2023",
-        "description": {
-          "points": [
-            "Created and deployed an iOS/Android mobile app for an anonymous social platform for college students using React Native, and Firestore DB.",
-            "Implemented security features for user and post channel privacy, contributing to a more secure user experience.",
-            "Improved app performance and scalability by reducing the average DB read count by 30% through optimizing query logic and data synchronization."
-          ]
-        },
-        "skills": ["React Native", "JavaScript", "Firebase"]
-      },
-      {
-        "title": "ARCraft",
-        "url": [
-          {
-            "link": "https://www.github.com/danie1r/ARCraft",
-            "type": "github"
-          }
-        ],
-        "years": "December 2022 - March 2023",
-        "description": {
-          "points": [
-            "Engineered ARCraft, an iOS social media app that provides a collection of 20+ AR video effects and AR multiplayer games using the ARKit and RealityKit SDK.",
-            "Optimized app performance by reworking application logic and synchronizing data in our server to reduce CPU utilization, which resulted in a 10% decrease in main thread work time."
-          ]
-        },
-        "skills": ["iOS App", "Swift", "ARKit/RealityKit", "Firebase"]
-      },
-      {
-        "title": "Pepper Inc.",
-        "url": [
-          {
-            "link": "www.peppermotor.com",
-            "type": "landing page"
-          },
-          {
-            "link": "https://github.com/danie1r/studioPepper",
-            "type" : "github"
-          }
-        ],
-        "years": "November 2021 - December 2022",
-        "description": {
-          "points": [
-            "Spearheaded a group of developers and designers in creating an NFT collection business recently launched in October 2022. ",
-            "Deployed smart contract for the NFT marketplace dApp and NFT token on the Polygon network using Pinata, Solidity, Ethereum Virtual Machine API (EVM), OpenZeppelin, and Typescript.",
-            "Created an NFT collection website with React and CSS and deployed the website using AWS EC2 Instance."
-          ]
-        },
-        "skills": [
-          "dApp",
-          "Smart Contract Dev",
-          "TypeScript",
-          "React.js",
-          "AWS EC2"
-        ]
-      },
-      {
-        "title": "Catch Me If You Can",
-        "url": [
-          {
-            "link" : "https://github.com/danie1r/Catch-Me-If-You-Can",
-            "type" : "github"
-          }
-        ],
-        "years": "November 2022 - December 2022",
-        "description": {
-          "points": [
-            "Directed an iOS game application that hosts an interactive multiplayer tag game using Swift, MapKit, and Ruby.",
-            "Constructed the backend service with Realtime Firebase Database, and scaled the application to hold up to over 100+ players."
-          ]
-        },
-        "skills": ["iOS App", "Swift", "MapKit", "Firebase", "Ruby"]
-      }
-    ],
+    "skillmessage": "",
     "education": [
       {
-        "school": "Washington University in St. Louis",
-        "degree": "MEng in Computer Science",
-        "graduated": "May 2024",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      },
-      {
-        "school": "Washington University in St. Louis",
-        "degree": "BSc in Computer Science",
-        "graduated": "May 2023",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school": "Washington University in St. Louis | McKelvey School of Engineering",
+        "degree": "BSc and MEng in Computer Science",
+        "graduated": "Graduating in May 2024",
+        "description": "GPA: 3.9/4.0, Member of Tau Beta Pi Engineering Honor Society, took relevant courseworks including Machine Learning, Artificial Intelligence, Object-Oriented Software Development, Parallel and Concurrent Programming, Mobile App Development, Data Structures and Algorithms, Rapid Development and Creative Programming"
       }
     ],
     "work": [
@@ -242,76 +151,88 @@
   "portfolio": {
     "projects": [
       {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
+        "title": "Priism Mobile",
         "image": "01.jpg",
-        "url": "https://www.canadianwanderlust.com"
+        "url": [
+          {
+            "link": "https://www.github.com/danie1r/Priism-mobile",
+            "type": "github"
+          }
+        ],
+        "years": "January 2023 - May 2023",
+        "description": {
+          "points": [
+            "Created and deployed an iOS/Android mobile app for an anonymous social platform for college students using React Native, and Firestore DB.",
+            "Implemented security features for user and post channel privacy, contributing to a more secure user experience.",
+            "Improved app performance and scalability by reducing the average DB read count by 30% through optimizing query logic and data synchronization."
+          ]
+        },
+        "skills": ["React Native", "JavaScript", "Firebase"]
       },
       {
-        "title": "Fury Fighting Gear",
-        "category": "(offline now) A fighting gear company I started",
+        "title": "ARCraft",
         "image": "02.jpg",
-        "url": "http://www.timbakerdev.com"
+        "url": [
+          {
+            "link": "https://www.github.com/danie1r/ARCraft",
+            "type": "github"
+          }
+        ],
+        "years": "December 2022 - March 2023",
+        "description": {
+          "points": [
+            "Engineered ARCraft, an iOS social media app that provides a collection of 20+ AR video effects and AR multiplayer games using the ARKit and RealityKit SDK.",
+            "Optimized app performance by reworking application logic and synchronizing data in our server to reduce CPU utilization, which resulted in a 10% decrease in main thread work time."
+          ]
+        },
+        "skills": ["iOS App", "Swift", "ARKit/RealityKit", "Firebase"]
       },
       {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
+        "title": "Pepper Inc.",
         "image": "03.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
+        "url": [
+          {
+            "link": "https://www.peppermotor.com",
+            "type": "landing page"
+          },
+          {
+            "link": "https://github.com/danie1r/studioPepper",
+            "type" : "github"
+          }
+        ],
+        "years": "November 2021 - December 2022",
+        "description": {
+          "points": [
+            "Spearheaded a group of developers and designers in creating an NFT collection business recently launched in October 2022. ",
+            "Deployed smart contract for the NFT marketplace dApp and NFT token on the Polygon network using Pinata, Solidity, Ethereum Virtual Machine API (EVM), OpenZeppelin, and Typescript.",
+            "Created an NFT collection website with React and CSS and deployed the website using AWS EC2 Instance."
+          ]
+        },
+        "skills": [
+          "dApp",
+          "Smart Contract Dev",
+          "TypeScript",
+          "React.js",
+          "AWS EC2"
+        ]
       },
       {
-        "title": "Resume Website",
-        "category": "A React based resume website template",
+        "title": "Catch Me If You Can",
         "image": "04.jpg",
-        "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Smirkspace",
-        "category": "(MVP Only) A React and Meteor based chat University project.",
-        "image": "05.jpg",
-        "url": "http://www.smirkspace.com"
-      },
-      {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
-        "image": "06.jpg",
-        "url": "https://www.canadianwanderlust.com"
-      },
-      {
-        "title": "Fury Fighting Gear",
-        "category": "(offline now) A fighting gear company I started",
-        "image": "01.jpg",
-        "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "02.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "03.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title": "Resume Website",
-        "category": "A React based resume website template",
-        "image": "04.jpg",
-        "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Smirkspace",
-        "category": "(MVP Only) A React and Meteor based chat University project.",
-        "image": "05.jpg",
-        "url": "http://www.smirkspace.com"
-      },
-      {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
-        "image": "06.jpg",
-        "url": "https://www.canadianwanderlust.com"
+        "url": [
+          {
+            "link" : "https://github.com/danie1r/Catch-Me-If-You-Can",
+            "type" : "github"
+          }
+        ],
+        "years": "November 2022 - December 2022",
+        "description": {
+          "points": [
+            "Directed an iOS game application that hosts an interactive multiplayer tag game using Swift, MapKit, and Ruby.",
+            "Constructed the backend service with Realtime Firebase Database, and scaled the application to hold up to over 100+ players."
+          ]
+        },
+        "skills": ["iOS App", "Swift", "MapKit", "Firebase", "Ruby"]
       }
     ]
   }

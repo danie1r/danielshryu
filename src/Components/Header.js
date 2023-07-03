@@ -4,9 +4,9 @@ import ParticlesBg from "particles-bg";
 function RolesDescription() {
   const roles = [
     "Full-Stack Developer",
-    "Microservices Developer",
+    "Web/Mobile App Developer",
     "Smart Contract Developer",
-    "Software Engineer"
+    "Software Engineer",
   ];
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
@@ -38,7 +38,7 @@ function RolesDescription() {
       setSubIndex((prev) => prev + (reverse ? -1 : 1));
     }, 80);
 
-    return () => clearTimeout(timeout);
+    return () => clearTimeout(timeout); // eslint-disable-next-line
   }, [subIndex, index, reverse]);
 
   useEffect(() => {
@@ -54,7 +54,7 @@ function RolesDescription() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        color: "white"
+        color: "white",
       }}
     >
       I am a &nbsp;
@@ -66,85 +66,97 @@ function RolesDescription() {
   );
 }
 
+function HeaderElement({ data }) {
+  if (!data) return null;
+  const github = data.github;
+  const linkedin = data.linkedin;
+  const name = data.name;
+  const description = data.description;
 
+  return (
+    <header id="home">
+      <ParticlesBg type="cobweb" bg={true} />
+
+      <nav id="nav-wrap">
+        <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
+          Show navigation
+        </a>
+        <a className="mobile-btn" href="#home" title="Hide navigation">
+          Hide navigation
+        </a>
+
+        <ul id="nav" className="nav">
+          <li className="current">
+            <a className="smoothscroll" href="#home">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a className="smoothscroll" href="#skills">
+              Skills
+            </a>
+          </li>
+
+          <li>
+            <a className="smoothscroll" href="#resume">
+              Resume
+            </a>
+          </li>
+
+          <li>
+            <a className="smoothscroll" href="#portfolio">
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a className="smoothscroll" href="#contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div className="row banner">
+        <div className="banner-text">
+          <h1 className="responsive-headline">{name}</h1>
+          <RolesDescription />
+          {/* <h3>{description}.</h3> */}
+          <hr />
+          <ul className="social">
+            <li>
+              <a href="mailto:r.seunghyeondaniel@wustl.edu?">
+                <i className="fa fa-envelope-o fa-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href={linkedin}>
+                <i className="fa fa-linkedin fa-lg"></i>
+              </a>
+            </li>
+            <li>
+              <a href={github} >
+                <i className="fa fa-github fa-lg"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+     
+      <p className="scrolldown">
+        <a className="smoothscroll" href="#skills">
+          <i className="icon-down-circle"></i>
+        </a>
+      </p>
+    </header>
+  );
+}
 class Header extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const project = this.props.data.project;
-    const github = this.props.data.github;
-    const name = this.props.data.name;
-    const description = this.props.data.description;
-
-    return (
-      <header id="home">
-        <ParticlesBg type="cobweb" bg={true} />
-
-        <nav id="nav-wrap">
-          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-            Show navigation
-          </a>
-          <a className="mobile-btn" href="#home" title="Hide navigation">
-            Hide navigation
-          </a>
-
-          <ul id="nav" className="nav">
-            <li className="current">
-              <a className="smoothscroll" href="#home">
-                Home
-              </a>
-            </li>
-
-            <li>
-              <a className="smoothscroll" href="#about">
-                About
-              </a>
-            </li>
-
-            <li>
-              <a className="smoothscroll" href="#resume">
-                Resume
-              </a>
-            </li>
-
-            <li>
-              <a className="smoothscroll" href="#portfolio">
-                Works
-              </a>
-            </li>
-
-            <li>
-              <a className="smoothscroll" href="#contact">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <div className="row banner">
-          <div className="banner-text">
-            <h1 className="responsive-headline">{name}</h1>
-            <RolesDescription/>
-            <h3>{description}.</h3>
-            <hr />
-            <ul className="social">
-              <a href={project} className="button btn project-btn">
-                <i className="fa fa-book"></i>Project
-              </a>
-              <a href={github} className="button btn github-btn">
-                <i className="fa fa-github"></i>Github
-              </a>
-            </ul>
-          </div>
-        </div>
-
-        <p className="scrolldown">
-          <a className="smoothscroll" href="#about">
-            <i className="icon-down-circle"></i>
-          </a>
-        </p>
-      </header>
-    );
+    return <HeaderElement data={this.props.data} />;
   }
 }
 

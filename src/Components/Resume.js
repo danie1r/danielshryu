@@ -63,37 +63,11 @@ class Resume extends Component {
       );
     });
 
-    const projects = this.props.data.projects.map(function (
-      proj,
-      index,
-      projects
-    ) {
-      return (
-        <div key={proj.title}>
-          <h3>{proj.title}</h3>
-          <p className="info">
-              {proj.url.map((go) => {
-                return <a href={go.link} className="link">{go.type}</a>;
-              })}
-            <span>&bull;</span> <em className="date">{proj.years}</em>
-          </p>
-          <ul style={{ listStyle: "inherit" }}>
-            {proj.description.points.map((bullet) => {
-              return <li>{bullet}</li>;
-            })}
-          </ul>
-          <div>
-            {proj.skills.map((skill) => {
-              return <button className="button btn skill-btn">{skill}</button>;
-            })}
-          </div>
-          {index !== projects.length - 1 ? <hr /> : null}
-        </div>
-      );
-    });
-
     return (
       <section id="resume">
+        <h1 className="sideHeader">
+          <span>RESUME</span>
+        </h1>
         <div className="row education">
           <div className="three columns header-col">
             <h1>
@@ -118,17 +92,17 @@ class Resume extends Component {
           <div className="nine columns main-col">{work}</div>
         </div>
 
-        <div className="row work">
+        {/* <div className="row work">
           <div className="three columns header-col">
             <h1>
               <span>Projects</span>
             </h1>
           </div>
 
-          <div className="nine columns main-col">{projects}</div>
-        </div>
+          <div className="eleven columns main-col">{projects}</div>
+        </div> */}
 
-        <div className="row skill">
+        {/* <div className="row skill">
           <div className="three columns header-col">
             <h1>
               <span>Skills</span>
@@ -142,7 +116,7 @@ class Resume extends Component {
               <ul className="skills">{skills}</ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     );
   }

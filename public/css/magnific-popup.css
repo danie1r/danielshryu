@@ -334,7 +334,8 @@ img.mfp-img {
     background: rgba(0, 0, 0, 0.6);
     position: fixed;
     text-align: center;
-    padding: 0; } }
+    padding: 0; }
+   }
 
 @media all and (max-width: 900px) {
   .mfp-arrow {
