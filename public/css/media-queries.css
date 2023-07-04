@@ -221,11 +221,9 @@
    header .scrolldown { display: none; }
 
    #skills .container{
-      display: block;
+      display: grid;
       border: none !important;
-      align-items: center !important;
-      margin-left: 10%;
-      margin-right: auto;
+      place-items: center;
    }
 
    #skills .box {
@@ -386,11 +384,11 @@
    header .social { font-size: 20px;}
    header .social li { margin: 0 6px; }
    #skills .container{
-      margin-left: 0% !important;
       font-size: smaller;
+      margin-left: auto;
    }
    #skills .box {
-      width: 300px !important;
+      width: 350px !important;
    }
    
    /* footer
