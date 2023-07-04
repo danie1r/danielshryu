@@ -386,8 +386,8 @@
    header .social { font-size: 20px;}
    header .social li { margin: 0 6px; }
    #skills .container{
-      margin-left: 5%;
-
+      margin-left: 0% !important;
+      font-size: smaller;
    }
 
    
