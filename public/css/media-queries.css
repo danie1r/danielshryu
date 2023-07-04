@@ -389,7 +389,9 @@
       margin-left: 0% !important;
       font-size: smaller;
    }
-
+   #skills .box {
+      width: 300px !important;
+   }
    
    /* footer
    ------------------------------------------------------------------------ */
