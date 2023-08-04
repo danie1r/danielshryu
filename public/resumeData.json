@@ -8,7 +8,6 @@
     "linkedin": "https://www.linkedin.com/in/shryu/",
     "youtube": "https://www.youtube.com/channel/UCrGk4dAirzsUaSY7LBz7oFA",
     "website": "http://www.timbakerdev.com",
-    "resumedownload": "/images/profilepic.jpg",
     "social": [
       {
         "name": "linkedin",
@@ -28,6 +27,7 @@
     ]
   },
   "resume": {
+    "resumedownload": "/resume.pdf",
     "skillmessage": "",
     "education": [
       {
@@ -44,30 +44,31 @@
         "years": "June 2023 - Present",
         "description": {
           "points": [
-            "Developed Node.js and TypeScript backend interfaces to transform data from Ticketmaster and Viator APIs and Elasticsearch DB into application-compatible objects.",
-            "Implemented Python script with concurrent programming (multithreading) to improve performance of ingesting location and product data into Elasticsearch DB.",
-            "Designed and executed a CI/CD model for automated data ingestion from Viator API, keeping ElasticSearch DB up to date."
+            "Constructed highly scalable backend architecture/microservices and API services using Node.js, and Typescript to perform data mapping/transfer operations for 10 different API services and Elasticsearch DB.",
+            "Established streamlined pipeline for seamless data ingestion from API services to Elasticsearch using Python and ArgoCD. ",
+            "Utilized OpenAPI specifications to define API structures and endpoints."
           ]
         },
         "skills": [
           "TypeScript",
           "Python",
-          "ElasticSearch",
+          "Elasticsearch",
           "Node.js",
-          "Concurrent Programming",
+          "Vue.js",
+          "ArgoCD",
+          "OpenAPI",
           "API Integration",
-          "Data Ingestion",
-          "CI/CD Model"
+          "Data Ingestion"
         ]
       },
       {
-        "company": "Washington University in St. Louis",
+        "company": "Washington University School of Medicine in St. Louis",
         "title": "Research Software Engineer",
         "years": "September 2022 - May 2023",
         "description": {
           "points": [
-            "Released an iOS health application for tracking the functional status of 100+ patients with musculoskeletal disorders using Swift, PostgreSQL, and Apple Healthkit API.",
-            "Revamped the EDC application for doctors to enroll subjects in the study using JavaScript and Java, reducing latency by 5 ms."
+            "Released an Electronic Data Capture web app and an iOS health application to assist doctors with tracking the functional status of 100+ patients with musculoskeletal disorders using Swift, PostgreSQL, and Apple Healthkit API.",
+            "Revamped the AWS Lambda functions, reducing the latency of updating patient data in real-time by 30ms."
           ]
         },
         "skills": [
@@ -81,13 +82,12 @@
       },
       {
         "company": "Object Computing Inc",
-        "title": "Software Engineer Intern",
+        "title": "Fullstack Software Engineer Intern",
         "years": "June 2022 - August 2022",
         "description": {
           "points": [
-            "Launched onboarding application with React and innovated the onboarding experience for new hires and HR managers by streamlining the whole process, reducing the time taken to onboard a new employee by 40%.",
-            "Constructed RESTful web services and DTOs with Java using the Micronaut framework and enhanced the elapsed time by 10% for SQL queries to execute within the PostgreSQL database.",
-            "Streamlined and simplified the process of tracking the progress of signing employment documents by integrating the SignRequest API."
+            "Enhanced OCI's open-source HR software by introducing a new feature that streamlined and expedited the employee onboarding process for new hires and HR managers.",
+            "Implemented bidirectional RESTful API services between client and PostgreSQL database to update employee's onboarding progress in real-time using Java, Micronaut, and Javascript."
           ]
         },
         "skills": [
@@ -100,20 +100,39 @@
         ]
       },
       {
+        "company": "Pepper Inc.",
+        "title": "Founder and Tech Lead",
+        "years": "Nov. 2021 -- Dec. 2022",
+        "description": {
+          "points": [
+            "Founded a Web3 brand and spearheaded a group of developers and designers in creating an NFT collection.",
+            "Orchestrated a marketplace dApp and deployed smart contract and NFT tokens on the Polygon network using Solidity, OpenZeppelin, and Typescript.",
+            "Created an NFT collection website with React.js and deployed the website using AWS EC2 Instance."
+          ]
+        },
+        "skills": [
+          "Solidity",
+          "Typescript",
+          "React.js",
+          "OpenZeppelin",
+          "AWS EC2"
+        ]
+      },
+      {
         "company": "Onnuri iKorea",
         "title": "Software Engineer",
         "years": "June 2019 - August 2022",
         "description": {
           "points": [
-            "Introduced a web data mining tool using Python, Selenium WebDriver, and BeautifulSoup library to collect and process data for understanding target consumers’ online behaviors.",
-            "Devised an AI tool using Python to collect data and analyze the number of potential customers from over 300 Instagram accounts based on keyword inputs."
+            "Developed Web and Instagram scraping tools using Python, Selenium WebDriver, and BeautifulSoup library to collect and analyze target market data and online customer behaviors."
           ]
         },
         "skills": [
           "Python",
+          "HTML",
           "Web-Scraping",
-          "Selenium WebDriver",
-          "Data Ingestion"
+          "Selenium",
+          "A/B Testing"
         ]
       }
     ],
@@ -153,18 +172,13 @@
       {
         "title": "Priism Mobile",
         "image": "01.jpg",
-        "url": [
-          {
-            "link": "https://www.github.com/danie1r/Priism-mobile",
-            "type": "github"
-          }
-        ],
+        "url":"https://www.github.com/danie1r/Priism-mobile" 
+        ,
         "years": "January 2023 - May 2023",
         "description": {
           "points": [
-            "Created and deployed an iOS/Android mobile app for an anonymous social platform for college students using React Native, and Firestore DB.",
-            "Implemented security features for user and post channel privacy, contributing to a more secure user experience.",
-            "Improved app performance and scalability by reducing the average DB read count by 30% through optimizing query logic and data synchronization."
+            "Crafted an iOS/Android mobile app for an anonymous social platform for college students using React Native, and Firestore. ",
+            "Implemented user and post-channel privacy security features, contributing to a more secure user experience."
           ]
         },
         "skills": ["React Native", "JavaScript", "Firebase"]
@@ -172,67 +186,28 @@
       {
         "title": "ARCraft",
         "image": "02.jpg",
-        "url": [
-          {
-            "link": "https://www.github.com/danie1r/ARCraft",
-            "type": "github"
-          }
-        ],
+        "url":"https://www.github.com/danie1r/ARCraft",
         "years": "December 2022 - March 2023",
         "description": {
           "points": [
-            "Engineered ARCraft, an iOS social media app that provides a collection of 20+ AR video effects and AR multiplayer games using the ARKit and RealityKit SDK.",
-            "Optimized app performance by reworking application logic and synchronizing data in our server to reduce CPU utilization, which resulted in a 10% decrease in main thread work time."
+            "Engineered an iOS social media app that provides a collection of Augmented Reality effects and games using ARKit and RealityKit SDK.",
+            "Reworked application logic and synchronized data to reduce CPU utilization, reducing main thread work time by 10%"
           ]
         },
-        "skills": ["iOS App", "Swift", "ARKit/RealityKit", "Firebase"]
-      },
-      {
-        "title": "Pepper Inc.",
-        "image": "03.jpg",
-        "url": [
-          {
-            "link": "https://www.peppermotor.com",
-            "type": "landing page"
-          },
-          {
-            "link": "https://github.com/danie1r/studioPepper",
-            "type" : "github"
-          }
-        ],
-        "years": "November 2021 - December 2022",
-        "description": {
-          "points": [
-            "Spearheaded a group of developers and designers in creating an NFT collection business recently launched in October 2022. ",
-            "Deployed smart contract for the NFT marketplace dApp and NFT token on the Polygon network using Pinata, Solidity, Ethereum Virtual Machine API (EVM), OpenZeppelin, and Typescript.",
-            "Created an NFT collection website with React and CSS and deployed the website using AWS EC2 Instance."
-          ]
-        },
-        "skills": [
-          "dApp",
-          "Smart Contract Dev",
-          "TypeScript",
-          "React.js",
-          "AWS EC2"
-        ]
+        "skills": ["iOS Dev", "Swift", "ARKit/RealityKit", "Firebase"]
       },
       {
         "title": "Catch Me If You Can",
         "image": "04.jpg",
-        "url": [
-          {
-            "link" : "https://github.com/danie1r/Catch-Me-If-You-Can",
-            "type" : "github"
-          }
-        ],
+        "url": "https://github.com/danie1r/Catch-Me-If-You-Can",
         "years": "November 2022 - December 2022",
         "description": {
           "points": [
-            "Directed an iOS game application that hosts an interactive multiplayer tag game using Swift, MapKit, and Ruby.",
-            "Constructed the backend service with Realtime Firebase Database, and scaled the application to hold up to over 100+ players."
+            "Created an iOS app that hosts an interactive multiplayer tag game using Swift, MapKit, and Ruby.",
+            "Managed game data with Realtime Firebase DB, and scaled the application to hold up to over 100+ players."
           ]
         },
-        "skills": ["iOS App", "Swift", "MapKit", "Firebase", "Ruby"]
+        "skills": ["iOS Dev", "Swift", "MapKit", "Firebase", "Ruby"]
       }
     ]
   }
