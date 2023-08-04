@@ -36,7 +36,7 @@ class Portfolio extends Component {
 
           <div>
             <a href={proj.url} className="link">
-              <div style={{display: "flex", margin:"0px", padding: "0px"}}>
+              <div style={{display: "flex", margin:"0px", padding: "0px", textDecoration: "none !important"}}>
                   <h3>{proj.title}</h3>
                   <i style={{color: "#8AFFE8", marginLeft:"10px"}} className="fa fa-external-link-square fa-lg"></i>
               </div>

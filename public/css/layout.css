@@ -501,6 +501,7 @@ ul#nav li.current a {
 #portfolio h3 {
   color: #fff;
   margin-bottom: 0;
+  text-decoration: none !important;
 }
 #portfolio h1 span {
   margin: 0;

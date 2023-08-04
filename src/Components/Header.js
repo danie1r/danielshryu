@@ -140,6 +140,11 @@ function HeaderElement({ data }) {
                 <i className="fa fa-github fa-lg"></i>
               </a>
             </li>
+            <li>
+              <a href={"../resume.pdf"} target="_blank" rel="noreferrer">
+                <i className="fa fa-download fa-lg"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
