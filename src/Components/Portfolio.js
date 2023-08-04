@@ -27,26 +27,26 @@ class Portfolio extends Component {
             }}
             className="project-list-img"
           >
-            <img alt={proj.title} src={projectImage} style={{borderRadius: "0.25rem", border: "2px solid gray"}}/>
+            <img
+              alt={proj.title}
+              src={projectImage}
+              style={{ borderRadius: "0.25rem", border: "2px solid gray" }}
+            />
           </div>
 
           <div>
-            <h3>{proj.title}</h3>
+            <a href={proj.url} className="link">
+              <div style={{display: "flex", margin:"0px", padding: "0px"}}>
+                  <h3>{proj.title}</h3>
+                  <i style={{color: "#8AFFE8", marginLeft:"10px"}} className="fa fa-external-link-square fa-lg"></i>
+              </div>
+            </a>
+            
             <ul style={{ listStyle: "inherit" }}>
               {proj.description.points.map((bullet) => {
-                return <li style={{lineHeight:"2"}}>{bullet}</li>;
+                return <li style={{ lineHeight: "1" }}>{bullet}</li>;
               })}
             </ul>
-            <p className="info">
-              {proj.url.map((go) => {
-                return (
-                  <a href={go.link} className="link" style={{color: "#8AFFE8"}}>
-                    <ion-icon name="link-outline"></ion-icon>
-                    {go.type}
-                  </a>
-                );
-              })}
-            </p>
             <div>
               {proj.skills.map((skill) => {
                 return (
