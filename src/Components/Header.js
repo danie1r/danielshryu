@@ -5,7 +5,6 @@ function RolesDescription() {
   const roles = [
     "Full-Stack Developer",
     "Web/Mobile App Developer",
-    "Smart Contract Developer",
     "Software Engineer",
   ];
   const [index, setIndex] = useState(0);
@@ -61,7 +60,7 @@ function RolesDescription() {
       <span style={{ color: "#fe6928" }}>{`${roles[index].substring(
         0,
         subIndex
-      )}${blink ? "|" : " "}`}</span>
+      )}${blink && subIndex < roles.length ? "|" : " "}`}</span>
     </h2>
   );
 }
