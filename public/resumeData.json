@@ -44,9 +44,8 @@
         "years": "June 2023 - Present",
         "description": {
           "points": [
-            "Constructed highly scalable backend architecture/microservices and API services using Node.js, and Typescript to perform data mapping/transfer operations for 10 different API services and Elasticsearch DB.",
-            "Established streamlined pipeline for seamless data ingestion from API services to Elasticsearch using Python and ArgoCD. ",
-            "Utilized OpenAPI specifications to define API structures and endpoints."
+            "Integrated distributed backend system and microservices to perform data mapping/transfer operations for 10 different API services, achieving 40% increase in data collection and enhancing data quality, accuracy, and consistency.",
+            "Established streamlined pipeline for seamless data ingestion from API services to Elasticsearch using Python and ArgoCD."
           ]
         },
         "skills": [
@@ -62,12 +61,36 @@
         ]
       },
       {
+        "company": "Washington University in St. Louis",
+        "title": "Teaching Assistant",
+        "years": "January 2023 - Current",
+        "description": {
+          "points": [
+            "Assisted in instructing a Software Development course encompassing web application development in client-side and server-side JavaScript, database management, building Apache Linux web server, utilizing web frameworks, and more.",
+            "Mentored a cohort of 20 students, providing guidance on assignments, technical questions, and grading."
+          ]
+        },
+        "skills": [
+          "JavaScript",
+          "MySQL",
+          "PHP",
+          "HTML",
+          "CSS", 
+          "React.js",
+          "Node.js",
+          "AWS",
+          "Git",
+          "Apache",
+          "MongoDB"
+        ]
+      },
+      {
         "company": "Washington University School of Medicine in St. Louis",
         "title": "Research Software Engineer",
         "years": "September 2022 - May 2023",
         "description": {
           "points": [
-            "Released an Electronic Data Capture web app and an iOS health application to assist doctors with tracking the functional status of 100+ patients with musculoskeletal disorders using Swift, PostgreSQL, and Apple Healthkit API.",
+            "Released an Electronic Data Capture web app and an iOS health app to assist doctors with tracking the functional status of 100+ patients with musculoskeletal disorders to improve patient outcomes.",
             "Revamped the AWS Lambda functions, reducing the latency of updating patient data in real-time by 30ms."
           ]
         },
@@ -86,8 +109,8 @@
         "years": "June 2022 - August 2022",
         "description": {
           "points": [
-            "Enhanced OCI's open-source HR software by introducing a new feature that streamlined and expedited the employee onboarding process for new hires and HR managers.",
-            "Implemented bidirectional RESTful API services between client and PostgreSQL database to update employee's onboarding progress in real-time using Java, Micronaut, and Javascript."
+            "Enhanced company's open-source HR software by deploying a new onboarding feature that expedited the employee onboarding process for new hires and HR managers by 30%.",
+            "Streamlined employee onboarding progress tracking by implementing bidirectional RESTful API services connecting the client and PostgreSQL database, ensuring accurate real-time updates."
           ]
         },
         "skills": [
