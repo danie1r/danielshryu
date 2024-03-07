@@ -41,11 +41,31 @@
       {
         "company": "Ellipsis Travel",
         "title": "Software Engineer Intern",
-        "years": "June 2023 - Present",
+        "years": "June 2023 - Aug 2023",
         "description": {
           "points": [
-            "Integrated distributed backend system and microservices to perform data mapping/transfer operations for 10 different API services, achieving 40% increase in data collection and enhancing data quality, accuracy, and consistency.",
-            "Established streamlined pipeline for seamless data ingestion from API services to Elasticsearch using Python and ArgoCD."
+            "Migrated backend operations from Typescript and Node.js to Go, enabling high-performance concurrency in handling geospatial data from over 30 API services, resulting in a 20% decrease in response time.",
+            "Crafted a scheduled email parser using Django Celery Beat and OpenAI Chat Completion API, automating the process of crawling trip confirmation emails and adding them to itineraries, resulting in improved user experience."
+          ]
+        },
+        "skills": [
+          "Django",
+          "Go",
+          "OpenAI",
+          "Python",
+          "Typescript",
+          "Node.js",
+          "OAuth"
+        ]
+      },
+      {
+        "company": "Ellipsis Travel",
+        "title": "Software Engineer Intern",
+        "years": "June 2023 - Aug 2023",
+        "description": {
+          "points": [
+            "Revamped the backend by integrating distributed systems with a microservices architecture using Typescript, and Node.js to reduce API latency by 30%.",
+            "Established streamlined data ingestion pipeline from multiple API services to Elasticsearch database using Python and ArgoCD."
           ]
         },
         "skills": [
@@ -66,8 +86,7 @@
         "years": "January 2023 - Current",
         "description": {
           "points": [
-            "Assisted in instructing a Software Development course encompassing web application development in client-side and server-side JavaScript, database management, building Apache Linux web server, utilizing web frameworks, and more.",
-            "Mentored a cohort of 20 students, providing guidance on assignments, technical questions, and grading."
+            "Mentored a cohort of 20 students for a Software Development course encompassing web application development in client-side and server-side Javascript, SQL, PHP, database management, building Apache web server, utilizing web frameworks, and more."
           ]
         },
         "skills": [
@@ -90,8 +109,8 @@
         "years": "September 2022 - May 2023",
         "description": {
           "points": [
-            "Released an Electronic Data Capture web app and an iOS health app to assist doctors with tracking the functional status of 100+ patients with musculoskeletal disorders to improve patient outcomes.",
-            "Revamped the AWS Lambda functions, reducing the latency of updating patient data in real-time by 30ms."
+            "Developed a real-time patient monitoring system using AWS services like Kinesis, Lambda, and RDS to track the functional status of over 100 subjects, resulting in improved patient outcomes.",
+            "Successfully refactored the code and logic of AWS Lambda functions, resulting in an 80ms reduction in real-time streaming latency of patient data."
           ]
         },
         "skills": [
