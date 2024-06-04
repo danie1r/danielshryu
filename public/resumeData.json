@@ -1,7 +1,7 @@
 {
   "main": {
     "name": "Daniel SH Ryu",
-    "description": "I specialize in ",
+    "description": "Born in Busan, raised in Shanghai, and venturing out into the startup scene in St. Louis",
     "image": "profilepic.jpg",
     "email": "r.seunghyeondaniel@wustl.edu",
     "github": "https://github.com/danie1r",
@@ -41,14 +41,17 @@
       {
         "company": "Ellipsis Travel",
         "title": "Software Engineer Intern",
-        "years": "June 2023 - Aug 2023",
+        "years": "Jan 2024 - June 2024",
         "description": {
           "points": [
-            "Migrated backend operations from Typescript and Node.js to Go, enabling high-performance concurrency in handling geospatial data from over 30 API services, resulting in a 20% decrease in response time.",
-            "Crafted a scheduled email parser using Django Celery Beat and OpenAI Chat Completion API, automating the process of crawling trip confirmation emails and adding them to itineraries, resulting in improved user experience."
+            "Revamped the backend by migrating microservices to Go and implementing parallelization, resulting in a 20% improvement in response time, reduced container image sizes, and enhanced concurrency.",
+            "Implemented an email parsing AI tool using Python, Django Celery Beat and the OpenAI Chat Completion API, automating the extraction and translation of trip confirmation emails into application-compatible objects, improving user satisfaction.",
+            "Implemented a cache system using Redis, significantly enhancing search response times."
           ]
         },
         "skills": [
+          "Vue.js",
+          "Redis",
           "Django",
           "Go",
           "OpenAI",
@@ -64,8 +67,8 @@
         "years": "June 2023 - Aug 2023",
         "description": {
           "points": [
-            "Revamped the backend by integrating distributed systems with a microservices architecture using Typescript, and Node.js to reduce API latency by 30%.",
-            "Established streamlined data ingestion pipeline from multiple API services to Elasticsearch database using Python and ArgoCD."
+            "Improved the server application by integrating a distributed system using TypeScript and Node.js, achieving a 30% reduction in API latency, leading to faster geospatial data processing and retrieval from 30+ third-party API services.",
+            "Streamlined data ingestion from multiple API services to Elasticsearch with Python and ArgoWorkflow, enhancing data accuracy and search efficiency."
           ]
         },
         "skills": [
@@ -109,8 +112,8 @@
         "years": "September 2022 - May 2023",
         "description": {
           "points": [
-            "Developed a real-time patient monitoring system using AWS services like Kinesis, Lambda, and RDS to track the functional status of over 100 subjects, resulting in improved patient outcomes.",
-            "Successfully refactored the code and logic of AWS Lambda functions, resulting in an 80ms reduction in real-time streaming latency of patient data."
+            "Developed an IoT-based patient monitoring system using React.js, Swift, Java and AWS cloud services, tracking over 100 subjects and contributing to a notable enhancement in patient monitoring and outcome analysis.",
+            "Optimized AWS Lambda functions and integrated AWS Kinesis for patient data streaming, achieving an 80ms reduction in latency and significantly enhancing real-time data analysis capabilities."
           ]
         },
         "skills": [
@@ -119,7 +122,9 @@
           "Swift",
           "PostgreSQL",
           "AWS Lambda",
-          "API Integration"
+          "AWS Kinesis",
+          "AWS S3",
+          "React.js"
         ]
       },
       {
@@ -128,8 +133,8 @@
         "years": "June 2022 - August 2022",
         "description": {
           "points": [
-            "Enhanced company's open-source HR software by deploying a new onboarding feature that expedited the employee onboarding process for new hires and HR managers by 30%.",
-            "Streamlined employee onboarding progress tracking by implementing bidirectional RESTful API services connecting the client and PostgreSQL database, ensuring accurate real-time updates."
+            "Launched a new employee onboarding feature for open-source HR software, reducing onboarding time by 30% and improving the experience for HR managers and new hires.",
+            "Implemented bidirectional RESTful APIs for onboarding progress tracking, ensuring accurate and timely data synchronization between the client and PostgreSQL database."
           ]
         },
         "skills": [
@@ -212,11 +217,24 @@
   "portfolio": {
     "projects": [
       {
+        "title": "Travelog",
+        "image": "05.jpg",
+        "url":"https://www.github.com/danie1r/travelog" 
+        ,
+        "years": "Feb 2024 - May 2024",
+        "description": {
+          "points": [
+            "Developed an AI-powered browser extension app using Typescript, Node.js, and OpenAI Chat Completions API, which captures and organizes travel destination data encountered by users during browsing sessions automatically, enhancing travel planning."
+          ]
+        },
+        "skills": ["Vue.js", "Typescript", "OpenAI Chat Completions"]
+      },
+      {
         "title": "Priism Mobile",
         "image": "01.jpg",
         "url":"https://www.github.com/danie1r/Priism-mobile" 
         ,
-        "years": "January 2023 - May 2023",
+        "years": "Jan 2023 - May 2023",
         "description": {
           "points": [
             "Crafted an iOS/Android mobile app for an anonymous social platform for college students using React Native, and Firestore. ",

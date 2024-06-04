@@ -3,8 +3,8 @@ import ParticlesBg from "particles-bg";
 
 function RolesDescription() {
   const roles = [
-    "Full-Stack Developer",
-    "Web/Mobile App Developer",
+    "Full-Stack Engineer",
+    "Application Developer",
     "Software Engineer",
   ];
   const [index, setIndex] = useState(0);
@@ -17,7 +17,6 @@ function RolesDescription() {
       setReverse(true);
       return;
     }
-
     if (
       subIndex === roles[index].length + 1 &&
       index !== roles.length - 1 &&
@@ -35,7 +34,7 @@ function RolesDescription() {
 
     const timeout = setTimeout(() => {
       setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, 80);
+    }, 100);
 
     return () => clearTimeout(timeout); // eslint-disable-next-line
   }, [subIndex, index, reverse]);
@@ -51,13 +50,13 @@ function RolesDescription() {
     <h2
       style={{
         display: "flex",
-        justifyContent: "center",
+        // justifyContent: "center",
         alignItems: "center",
         color: "white",
       }}
     >
       I am a &nbsp;
-      <span style={{ color: "#fe6928" }}>{`${roles[index].substring(
+      <span style={{ color: "#8AFFE8" }}>{`${roles[index].substring(
         0,
         subIndex
       )}${blink && subIndex < roles.length ? "|" : " "}`}</span>
@@ -74,8 +73,7 @@ function HeaderElement({ data }) {
 
   return (
     <header id="home">
-      <ParticlesBg type="cobweb" bg={true} />
-
+      <ParticlesBg color="#5b5c5c" num={200} type="cobweb" bg={true} />
       <nav id="nav-wrap">
         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
           Show navigation
@@ -121,11 +119,11 @@ function HeaderElement({ data }) {
         <div className="banner-text">
           <h1 className="responsive-headline">{name}</h1>
           <RolesDescription />
-          {/* <h3>{description}.</h3> */}
+          <h3>{description}</h3>
           <hr />
           <ul className="social">
             <li>
-              <a href="mailto:r.seunghyeondaniel@wustl.edu?">
+              <a href="mailto:d97shryu@gmail.com?">
                 <i className="fa fa-envelope-o fa-lg"></i>
               </a>
             </li>
@@ -148,11 +146,11 @@ function HeaderElement({ data }) {
         </div>
       </div>
      
-      <p className="scrolldown">
+      {/* <p className="scrolldown">
         <a className="smoothscroll" href="#skills">
           <i className="icon-down-circle"></i>
         </a>
-      </p>
+      </p> */}
     </header>
   );
 }

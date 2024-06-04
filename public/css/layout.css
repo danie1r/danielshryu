@@ -35,8 +35,7 @@ header {
   height: 800px;
   min-height: 500px;
   width: 100%;
-
-  text-align: center;
+  text-align: left; /* Align text to the left */
   overflow: hidden;
 }
 
@@ -47,37 +46,49 @@ header:before {
   vertical-align: middle;
   height: 100%;
 }
+
 header .banner {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 auto;
+  margin: 0;
   width: 85%;
   padding-bottom: 30px;
-  text-align: center;
+  text-align: left; /* Align text to the left */
+  margin-left: 10%;
 }
 
 header .banner-text {
   width: 100%;
 }
+
 header .banner-text h1 {
-  font: 90px/1.1em "opensans-bold", sans-serif;
+  font: 50px/1.1em "publicasans-medium", sans-serif !important;
   color: #fff;
   letter-spacing: -2px;
-  margin: 0 auto 18px auto;
+  margin: 0 0 18px 0; /* Adjust margins to align left */
+  text-align: left; /* Align text to the left */
 }
+
+header .banner-text h2 {
+  font: 60px/1.1em "publicasans-medium", sans-serif;
+}
+
 header .banner-text h3 {
-  font: 18px/1.9em "librebaskerville-regular", serif;
+  font: 18px/1.9em "sometype-regular", serif;
   color: #ddd;
-  margin: 0 auto;
+  margin: 0;
   width: 70%;
+  text-align: left; /* Align text to the left */
 }
+
 header .banner-text h3 span,
 header .banner-text h3 a {
   color: #fff;
 }
+
 header .banner-text hr {
   width: 60%;
-  margin: 18px auto 24px auto;
+  margin: 18px 0 24px 0; /* Adjust margins to align left */
   border-color: #2f2d2e;
   border-color: rgba(150, 150, 150, 0.1);
 }
@@ -87,40 +98,42 @@ header .social {
   margin: 24px 0;
   padding: 30;
   font-size: 30px;
+  text-align: left; /* Align text to the left */
 }
+
 header .social li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 15px 0 0; /* Adjust margins to align left */
   padding: 0;
 }
+
 header .social li a {
   color: #fff;
-  
 }
+
 header .social li a:hover {
   color: #8AFFE8;
 }
 
 /* scrolldown link */
 header .scrolldown a {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -29px;
+  /* position: absolute; */
+  /* bottom: 30px; */
+  /* left: 30px; Adjust position to left */
   color: #fff;
-  display: block;
+  display: inline-block;
   height: 42px;
   width: 42px;
   font-size: 42px;
   line-height: 42px;
   color: #fff;
   border-radius: 100%;
-
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 header .scrolldown a:hover {
   color: #8AFFE8;
 }
@@ -139,17 +152,19 @@ header .scrolldown a:hover {
 /* nav-wrap */
 #nav-wrap {
   font: 12px "opensans-bold", sans-serif;
-  width: 100%;
+  width: 10%;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   margin: 0 auto;
   z-index: 100;
   position: fixed;
-  left: 0;
-  top: 0;
+  right: 0; /* Align to the right */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for actual centering */
 }
+
 .opaque {
-  background-color: #333;
+  background-color: #0f0f0f;
 }
 
 /* hide toggle button */
@@ -158,30 +173,28 @@ header .scrolldown a:hover {
 }
 
 ul#nav {
+  display: flex;
+  flex-direction: column; /* Change to vertical layout */
   min-height: 48px;
   width: auto;
-
-  /* center align the menu */
   text-align: center;
 }
+
 ul#nav li {
   position: relative;
   list-style: none;
   height: 48px;
-  display: inline-block;
+  display: block; /* Change to block for vertical alignment */
 }
 
 /* Links */
 ul#nav li a {
-  /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
-
-  display: inline-block;
+  display: block; /* Change to block for vertical alignment */
   padding: 8px 13px;
   line-height: 32px;
   text-decoration: none;
   text-align: left;
   color: #fff;
-
   -webkit-transition: color 0.2s ease-in-out;
   -moz-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
@@ -192,6 +205,7 @@ ul#nav li a {
 ul#nav li a:active {
   background-color: transparent !important;
 }
+
 ul#nav li.current a {
   color: #8AFFE8;
 }
@@ -262,7 +276,7 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #skills {
-  background: linear-gradient(#0f0e0e, #414246);
+  background:#0f0f0f;
   padding-top: 96px;
   padding-bottom: 66px;
   overflow: hidden;
@@ -274,7 +288,7 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #resume {
-  background: #414246;
+  background: #0f0f0f;
   padding-top: 90px;
   padding-bottom: 50px;
   overflow: hidden;
@@ -291,23 +305,31 @@ ul#nav li.current a {
 }
 
 .sideHeader {
-  font: 60px/70px "opensans-bold", sans-serif !important;
+  font: 30px/40px 'sometype-regular' !important;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #fff !important;
+  color: #8AFFE8 !important;
   margin-top: 0 !important;
-  background: #414246;
-  text-align: center;
+  background: #0f0f0f;
+  text-align: left;
   border: none !important;
   padding-bottom: 50px;
+  margin-left: 10%;
+}
+
+#resume .container {
+  background-color: #181717f1;
+  border-radius: 10px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
 }
 
 #resume h1 {
-  font: 18px/24px "opensans-bold", sans-serif;
+  font: 25px/30px "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 8px;
-  border-bottom: 5px solid #8AFFE8;
-  text-align: center;
 }
 #resume h1 span {
   padding-bottom: 6px;
@@ -322,17 +344,17 @@ ul#nav li.current a {
   padding-top: 9px;
 }
 #resume .main-col {
-  padding-right: 10%;
+  padding-right: 5%;
+  
 }
 
 .education,
 .work {
   margin-bottom: 48px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #e8e8e8;
 }
 #resume .info {
-  font: 16px/24px "opensans-light", serif;
+  font: 15px/20px "opensans-light", serif;
   color: #fff;
   margin-bottom: 18px;
   margin-top: 9px;
@@ -342,7 +364,7 @@ ul#nav li.current a {
   margin-left: 5px;
 }
 #resume .date {
-  font: 15px/24px "opensans-light", sans-serif;
+  font: 15px/20px "opensans-light", sans-serif;
   margin-top: 6px;
 }
 
@@ -486,7 +508,7 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-  background: #414246;
+  background: #0f0f0f;
   padding-bottom: 60px;
   color: #fff;
 }
@@ -1201,21 +1223,31 @@ footer .social-links li:first-child {
 
 #skills .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 65%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #181717f1;
+  border-radius: 10px;
 }
 
 #skills .box {
-  width: 400px;
-  padding: 10px;
+  width: 350px;
+  padding: 20px;
   text-align: center;
   background-color: transparent;
 }
 
 #skills .box-title {
   color: #fff;
+  font-size: medium;
 }
 
 #skills .box-content {
   margin-top: 10px;
   color: #ffffff;
+  font-size: medium;
 }

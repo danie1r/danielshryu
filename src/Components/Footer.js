@@ -37,14 +37,15 @@ class Footer extends Component {
                   color: "white",
                   fontSize: "30px !important",
                   alignItems: "center",
+                  background: "#414246 !important"
                 }}
               >
                 Get In Touch.
               </span>
             </h1>
             <h3>
-              <a href="mailto:r.seunghyeondaniel@wustl.edu?">
-                <span>r.seunghyeondaniel@wustl.edu</span>
+              <a href="mailto:d97shryu@gmail.com?">
+                <span>d97shryu@gmail.com</span>
               </a>
             </h3>
             <ul style={{ alignItems: "center" }}>{networks}</ul>

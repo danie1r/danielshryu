@@ -138,6 +138,21 @@
     font-style: normal;
 }
 
+/* Sometype */
+@font-face {
+    font-family: 'sometype-regular';
+    src: url('fonts/sometype/SometypeMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* public sans */
+@font-face {
+    font-family: 'publicasans-medium';
+    src: url('fonts/publicasans/PublicaSans-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*
  * FIXED for Font-Face Chrome Rendering

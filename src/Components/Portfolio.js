@@ -77,9 +77,9 @@ class Portfolio extends Component {
       // </section>
 
       <section id="portfolio">
-        <h1 className="sideHeader">
+        <div className="sideHeader">
           <span>Projects</span>
-        </h1>
+        </div>
         <div className="row work">
           <div className="eleven columns main-col">{projects}</div>
         </div>

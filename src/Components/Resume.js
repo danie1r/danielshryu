@@ -13,7 +13,7 @@ class Resume extends Component {
   render() {
     if (!this.props.data) return null;
 
-    const skillmessage = this.props.data.skillmessage;
+    // const skillmessage = this.props.data.skillmessage;
     const education = this.props.data.education.map(function (education) {
       return (
         <div key={education.school}>
@@ -29,13 +29,13 @@ class Resume extends Component {
 
     const work = this.props.data.work.map(function (w, index, work) {
       return (
-        <div key={w.company}>
+        <div key={w.company} style={{ marginBottom: "15%"}}>
           <h3>{w.company}</h3>
           <p className="info">
             {w.title}
             <span>&bull;</span> <em className="date">{w.years}</em>
           </p>
-          <ul style={{ listStyle: "inherit" }}>
+          <ul style={{ listStyle: "inherit", marginLeft:"10%"}}>
             {w.description.points.map((bullet) => {
               return <li>{bullet}</li>;
             })}
@@ -45,53 +45,53 @@ class Resume extends Component {
               return <button className="button btn skill-btn">{skill}</button>;
             })}
           </div>
-          {index !== work.length - 1 ? <hr /> : null}
         </div>
       );
     });
 
-    const skills = this.props.data.skills.map((skills) => {
-      const backgroundColor = this.getRandomColor();
-      const className = "bar-expand " + skills.name.toLowerCase();
-      const width = skills.level;
+    // const skills = this.props.data.skills.map((skills) => {
+    //   const backgroundColor = this.getRandomColor();
+    //   const className = "bar-expand " + skills.name.toLowerCase();
+    //   const width = skills.level;
 
-      return (
-        <li key={skills.name}>
-          <span style={{ width, backgroundColor }} className={className}></span>
-          <em>{skills.name}</em>
-        </li>
-      );
-    });
+    //   return (
+    //     <li key={skills.name}>
+    //       <span style={{ width, backgroundColor }} className={className}></span>
+    //       <em>{skills.name}</em>
+    //     </li>
+    //   );
+    // });
 
     return (
       <section id="resume">
-        <h1 className="sideHeader">
+        <div className="sideHeader">
           <span>RESUME</span>
-        </h1>
-        <div className="row education">
-          <div className="three columns header-col">
-            <h1>
-              <span>Education</span>
-            </h1>
-          </div>
+        </div>
+        <div className="container">
+          <div className="row education">
+            <div className="five columns header-col">
+              <h1>
+                <span>Education</span>
+              </h1>
+            </div>
 
-          <div className="nine columns main-col">
-            <div className="row item">
-              <div className="twelve columns">{education}</div>
+            <div className="seven columns main-col">
+              <div className="row item">
+                <div className="twelve columns" style={{fontSize:"medium"}}>{education}</div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="row work">
-          <div className="three columns header-col">
-            <h1>
-              <span>Work</span>
-            </h1>
+          <div className="row work">
+            <div className="five columns header-col">
+              <h1>
+                <span>Work</span>
+              </h1>
+            </div>
+
+            <div className="seven columns main-col" style={{fontSize:"medium"}}>{work}</div>
           </div>
-
-          <div className="nine columns main-col">{work}</div>
         </div>
-
         {/* <div className="row work">
           <div className="three columns header-col">
             <h1>
