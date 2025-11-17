@@ -5,6 +5,7 @@ class Footer extends Component {
     if (!this.props.data) return null;
 
     const networks = this.props.data.social.map(function (network) {
+      console.log(network);
       return (
         <li key={network.name}>
           <a href={network.url}>
@@ -43,37 +44,12 @@ class Footer extends Component {
                 Get In Touch.
               </span>
             </h1>
-            <h3>
+            {/* <h3>
               <a href="mailto:d97shryu@gmail.com?">
                 <span>d97shryu@gmail.com</span>
               </a>
-            </h3>
+            </h3> */}
             <ul style={{ alignItems: "center" }}>{networks}</ul>
-          </div>
-
-          <div className="row">
-            <div className="twelve columns">
-              <ul className="copyright">
-                <li>
-                  Deployed with{" "}
-                  <a title="Vercel" href="https://vercel.com/">
-                    Vercel
-                  </a>
-                </li>
-                <li>
-                  Built with{" "}
-                  <a title="ReactJs" href="https://react.dev/">
-                    React.Js
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div id="go-top">
-              <a className="smoothscroll" title="Back to Top" href="#home">
-                <i className="icon-up-open"></i>
-              </a>
-            </div>
           </div>
         </section>
         <div style={{ width: "100%", margin: "0"}}>

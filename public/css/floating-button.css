@@ -1,0 +1,51 @@
+/* Floating Ask AI Button */
+.floating-ask-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: rgba(17, 17, 17, 0.95);
+  border: 2px solid #8AFFE8;
+  border-radius: 50px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.floating-ask-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  border-color: #e8e5e5;
+  color: #fbfbfb;
+}
+
+.floating-ask-button i {
+  font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-ask-button {
+    padding: 10px 16px;
+    font-size: 12px;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .floating-ask-button i {
+    font-size: 16px;
+  }
+  
+  .floating-ask-button span {
+    display: none;
+  }
+}

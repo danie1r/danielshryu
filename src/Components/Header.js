@@ -1,70 +1,13 @@
-import React, { Component, useState, useEffect } from "react";
+import { Component, useState } from "react";
 import ParticlesBg from "particles-bg";
+import { Button } from "@headlessui/react";
+import Navigation from "../utils/Navigation";
+import ChatModal from "./ChatModal";
 
-function RolesDescription() {
-  const roles = [
-    "Full-Stack Engineer",
-    "Application Developer",
-    "Software Engineer",
-  ];
-  const [index, setIndex] = useState(0);
-  const [subIndex, setSubIndex] = useState(0);
-  const [blink, setBlink] = useState(true);
-  const [reverse, setReverse] = useState(false);
-
-  useEffect(() => {
-    if (index === roles.length - 1 && subIndex === roles[index].length) {
-      setReverse(true);
-      return;
-    }
-    if (
-      subIndex === roles[index].length + 1 &&
-      index !== roles.length - 1 &&
-      !reverse
-    ) {
-      setReverse(true);
-      return;
-    }
-
-    if (subIndex === 0 && reverse) {
-      setReverse(false);
-      setIndex((prev) => prev + 1);
-      return;
-    }
-
-    const timeout = setTimeout(() => {
-      setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, 100);
-
-    return () => clearTimeout(timeout); // eslint-disable-next-line
-  }, [subIndex, index, reverse]);
-
-  useEffect(() => {
-    const timeout2 = setTimeout(() => {
-      setBlink((prev) => !prev);
-    }, 500);
-    return () => clearTimeout(timeout2);
-  }, [blink]);
-
-  return (
-    <h2
-      style={{
-        display: "flex",
-        // justifyContent: "center",
-        alignItems: "center",
-        color: "white",
-      }}
-    >
-      I am a &nbsp;
-      <span style={{ color: "#8AFFE8" }}>{`${roles[index].substring(
-        0,
-        subIndex
-      )}${blink && subIndex < roles.length ? "|" : " "}`}</span>
-    </h2>
-  );
-}
 
 function HeaderElement({ data }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  
   if (!data) return null;
   const github = data.github;
   const linkedin = data.linkedin;
@@ -74,59 +17,29 @@ function HeaderElement({ data }) {
   return (
     <header id="home">
       <ParticlesBg color="#5b5c5c" num={200} type="cobweb" bg={true} />
-      <nav id="nav-wrap">
-        <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-          Show navigation
-        </a>
-        <a className="mobile-btn" href="#home" title="Hide navigation">
-          Hide navigation
-        </a>
+      <Navigation />
+      
+      {/* Floating Ask AI Button */}
+      <Button 
+        onClick={() => setIsModalOpen(true)}
+        className="floating-ask-button"
+        aria-label="Ask AI"
+      >
+        <i className="fa fa-magic"></i>
+        <span>Ask AI</span>
+      </Button>
 
-        <ul id="nav" className="nav">
-          <li className="current">
-            <a className="smoothscroll" href="#home">
-              Home
-            </a>
-          </li>
-
-          <li>
-            <a className="smoothscroll" href="#skills">
-              Skills
-            </a>
-          </li>
-
-          <li>
-            <a className="smoothscroll" href="#resume">
-              Resume
-            </a>
-          </li>
-
-          <li>
-            <a className="smoothscroll" href="#portfolio">
-              Projects
-            </a>
-          </li>
-
-          <li>
-            <a className="smoothscroll" href="#contact">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
+      {/* Chat Modal */}
+      <ChatModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
 
       <div className="row banner">
         <div className="banner-text">
           <h1 className="responsive-headline">{name}</h1>
-          <RolesDescription />
           <h3>{description}</h3>
-          <hr />
           <ul className="social">
-            <li>
-              <a href="mailto:d97shryu@gmail.com?">
-                <i className="fa fa-envelope-o fa-lg"></i>
-              </a>
-            </li>
             <li>
               <a href={linkedin}>
                 <i className="fa fa-linkedin fa-lg"></i>
@@ -137,20 +50,15 @@ function HeaderElement({ data }) {
                 <i className="fa fa-github fa-lg"></i>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href={"../resume.pdf"} target="_blank" rel="noreferrer">
                 <i className="fa fa-download fa-lg"></i>
               </a>
-            </li>
+            </li> */}
           </ul>
+          {/* <hr /> */}
         </div>
       </div>
-     
-      {/* <p className="scrolldown">
-        <a className="smoothscroll" href="#skills">
-          <i className="icon-down-circle"></i>
-        </a>
-      </p> */}
     </header>
   );
 }

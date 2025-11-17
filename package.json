@@ -4,9 +4,14 @@
   "private": true,
   "homepage": "./",
   "dependencies": {
+    "@headlessui/react": "^2.2.9",
     "@vercel/analytics": "^1.3.1",
     "anix": "^1.3.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
     "jquery": "^3.7.1",
+    "openai": "^4.20.1",
     "particles-bg": "^2.5.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -19,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "node api/server.js",
+    "dev": "concurrently \"npm start\" \"npm run server\""
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +47,9 @@
     ]
   },
   "devDependencies": {
-    "chokidar": "^3.6.0"
-  }
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "chokidar": "^3.6.0",
+    "concurrently": "^8.2.2"
+  },
+  "proxy": "http://localhost:8000"
 }

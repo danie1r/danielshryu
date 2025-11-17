@@ -1,12 +1,11 @@
 {
   "main": {
     "name": "Daniel SH Ryu",
-    "description": "Born in Busan, raised in Shanghai, and venturing out into the startup scene in St. Louis",
+    "description": "Born in Busan, raised in Shanghai, and venturing out into the startup scene in San Francisco",
     "image": "profilepic.jpg",
-    "email": "r.seunghyeondaniel@wustl.edu",
+    "email": "",
     "github": "https://github.com/danie1r",
     "linkedin": "https://www.linkedin.com/in/shryu/",
-    "youtube": "https://www.youtube.com/channel/UCrGk4dAirzsUaSY7LBz7oFA",
     "website": "http://www.timbakerdev.com",
     "social": [
       {
@@ -18,11 +17,6 @@
         "name": "github",
         "url": "https://github.com/danie1r",
         "className": "fa fa-github fa-lg"
-      },
-      {
-        "name": "youtube",
-        "url": "https://www.youtube.com/channel/UCrGk4dAirzsUaSY7LBz7oFA",
-        "className": "fa fa-youtube fa-lg"
       }
     ]
   },
